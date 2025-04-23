@@ -1,7 +1,7 @@
 <div class="right-sidebar-menu">
     <div class="sidebar-logo-area d-flex justify-content-between align-items-center">
         <div class="sidebar-logo-wrap">
-            <a href="index.html"><img alt="image" src="assets/image/svg/rextfy.svg" /></a>
+            <a href="{{route('home')}}"><img alt="image" src="{{logo()}}" /></a>
         </div>
         <div class="right-sidebar-close-btn">
             <i class="bi bi-x"></i>

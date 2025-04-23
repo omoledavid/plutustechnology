@@ -6,8 +6,8 @@
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.html"><img alt="image" class="img-fluid"
-                            src="assets/image/logo/rextfy.png" /></a>
+                    <a href="{{route('home')}}"><img alt="image" class="img-fluid"
+                            src="{{logo()}}" /></a>
                 </div>
             </div>
             <ul class="menu-list">
