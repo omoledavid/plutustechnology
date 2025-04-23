@@ -6,7 +6,7 @@
                     <div class="logo-and-social-media-area">
                         <div class="footer-logo">
                             <a href="#">
-                                <img src="assets/image/logo/white-logo.png" alt="" /></a>
+                                <img src="{{logo()}}" alt="" /></a>
                         </div>
                         <div class="footer-content">
                             <p>
