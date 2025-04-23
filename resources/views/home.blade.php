@@ -1,0 +1,9 @@
+<x-app-layout>
+    @include('sections.hero')
+    @include('sections.about-us')
+    @include('sections.services')
+    @include('sections.latest-projects')
+    @include('sections.testimonials')
+    @include('sections.teams')
+    @include('sections.cta')
+</x-app-layout>

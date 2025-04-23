@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Rextfy Html Template</title>
+    <title>Plutustechnology</title>
     <link rel="icon" href="assets/image/logo/rextfy-icon-white.png" />
 </head>
 

@@ -1,7 +1,7 @@
 <header class="header-area style-1">
     <div class="container-fluid container-rextfy d-flex flex-nowrap align-items-center justify-content-between">
         <div class="header-logo">
-            <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/svg/rextfy.svg" /></a>
+            <a href="{{route('home')}}"><img alt="image" class="img-fluid" src="{{logo()}}" /></a>
         </div>
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-center">
