@@ -12,4 +12,7 @@ Route::controller(SiteController::class)->group(function () {
     Route::get('about', 'about')->name('about');
     Route::get('services', 'services')->name('services');
 });
+Route::fallback(function () {
+    return view('404');
+});
 require __DIR__.'/auth.php';
