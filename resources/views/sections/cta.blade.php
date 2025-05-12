@@ -9,7 +9,8 @@
                     <div class="cta-information">
                         <ul>
                             <li class="social-info">
-                                <a href="https://demo.qzency.com/cdn-cgi/l/email-protection#2f464149406f4a574e425f434a014c4042">
+                                <a
+                                    href="https://demo.qzency.com/cdn-cgi/l/email-protection#2f464149406f4a574e425f434a014c4042">
                                     <svg width="16" height="16" viewBox="0 0 17 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_437_66)">
@@ -25,11 +26,11 @@
                                         </defs>
                                     </svg>
 
-                                    <span class="__cf_email__" data-cfemail="244d4a424b64415c45495448410a474b49">[email&#160;protected]</span>
+                                    <span class="__cf_email__">{{ $general?->site_email }}</span>
                                 </a>
                             </li>
                             <li class="social-info">
-                                <a href="tel:+19543939100">
+                                <a href="tel:{{ formatPhoneNumber($general?->phone) }}">
                                     <svg width="16" height="16" viewBox="0 0 17 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -43,7 +44,7 @@
                                             fill="#EBEBEB" />
                                     </svg>
 
-                                    +19543939100
+                                    {{ formatPhoneNumber($general?->phone) }}
                                 </a>
                             </li>
                         </ul>

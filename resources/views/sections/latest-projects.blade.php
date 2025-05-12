@@ -1,21 +1,225 @@
-<div class="latest-project-section pt-120 pb-120">
-    <div class="container">
-        <div class="row align-items-end mb-60">
-            <div class="col-lg-6">
-                <div class="section-title wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <span class="sub-title">Latest Projects</span>
-                    <h2>Showcasing Our Recent Tech Projects</h2>
+@php
+    $sectionData = \App\View\Helpers\PageSectionHelper::getSection('home', 'portfolio');
+@endphp
+@if ($sectionData)
+    <div class="portfolio-section pt-120 pb-120">
+        <div class="container">
+            <div class="row mb-60">
+                <div class="col-lg-12 d-flex align-items-center justify-content-center wow animate fadeInUp"
+                    data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="section-title three text-center">
+                        <span class="sub-title-three">{{ $sectionData->content['title'] }}</span>
+                        <h2>{{ $sectionData->content['subtitle'] }}</h2>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-lg-end">
-                <a class="primary-btn-four style-2 transparent wow animate fadeInRight" data-wow-delay="400ms"
-                    data-wow-duration="1500ms " href="projects.html">
-                    <span>See All Projects</span>
-                </a>
+            <div class="row g-4 gy-5">
+                <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <a href="#">
+                                <img class="portfolio-img" src="assets/image/card-img/portfolio-1.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h6>Client: Egenslabs</h6>
+                            <h3><a href="projects-details.html">Graphic Design Artwork</a></h3>
+
+                            <div class="view-btn">
+                                <a href="projects-details.html" class="primary-button"
+                                    style="
+                      visibility: visible;
+                      animation-duration: 1500ms;
+                      animation-delay: 400ms;
+                    ">View
+                                    Details
+                                </a>
+                                <div class="icon">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                            fill="#FE5E3A"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <a href="#">
+                                <img class="portfolio-img" src="assets/image/card-img/portfolio-2.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h6>Client: Egenslabs</h6>
+                            <h3><a href="projects-details.html">Web Development Project</a></h3>
+                            <div class="view-btn">
+                                <a href="projects-details.html" class="primary-button"
+                                    style="
+                      visibility: visible;
+                      animation-duration: 1500ms;
+                      animation-delay: 400ms;
+                    ">View
+                                    Details
+                                </a>
+                                <div class="icon">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                            fill="#FE5E3A"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <a href="projects-details.html">
+                                <img class="portfolio-img" src="assets/image/card-img/portfolio-3.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h6>Client: Egenslabs</h6>
+                            <h3><a href="projects-details.html">Cyber Security Project</a></h3>
+                            <div class="view-btn">
+                                <a href="#" class="primary-button"
+                                    style="
+                      visibility: visible;
+                      animation-duration: 1500ms;
+                      animation-delay: 400ms;
+                    ">View
+                                    Details
+                                </a>
+                                <div class="icon">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                            fill="#FE5E3A"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <a href="#">
+                                <img class="portfolio-img" src="assets/image/card-img/portfolio-4.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h6>Client: Egenslabs</h6>
+                            <h3><a href="projects-details.html">Ui/Ux Design Project</a></h3>
+                            <div class="view-btn">
+                                <a href="projects-details.html" class="primary-button"
+                                    style="
+                      visibility: visible;
+                      animation-duration: 1500ms;
+                      animation-delay: 400ms;
+                    ">View
+                                    Details
+                                </a>
+                                <div class="icon">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                            fill="#FE5E3A"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <a href="#">
+                                <img class="portfolio-img" src="assets/image/card-img/portfolio-5.png"
+                                    alt="" />
+                            </a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h6>Client: Egenslabs</h6>
+                            <h3><a href="projects-details.html">Modern Illustration Artwork</a></h3>
+                            <div class="view-btn">
+                                <a href="projects-details.html" class="primary-button"
+                                    style="
+                      visibility: visible;
+                      animation-duration: 1500ms;
+                      animation-delay: 400ms;
+                    ">View
+                                    Details
+                                </a>
+                                <div class="icon">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                            fill="#FE5E3A"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="700ms"
+                    data-wow-duration="1500ms">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <a href="#">
+                                <img class="portfolio-img" src="assets/image/card-img/portfolio-6.png"
+                                    alt="" />
+                            </a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h6>Client: Egenslabs</h6>
+                            <h3><a href="projects-details.html">Graphic Design Project</a></h3>
+
+                            <div class="view-btn">
+                                <a href="projects-details.html" class="primary-button"
+                                    style="
+                      visibility: visible;
+                      animation-duration: 1500ms;
+                      animation-delay: 400ms;
+                    ">View
+                                    Details
+                                </a>
+                                <div class="icon">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                            fill="#FE5E3A"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-content-and-button">
+                    <p>{{ $sectionData->content['description'] }}</p>
+                    <div class="view-btn">
+                        <a href="projects-details.html" class="primary-button">View All Services </a>
+                        <div class="icon">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.4581 7.60306L17.7791 7.45484L17.8222 7.45222C18.0002 7.44727 18.1676 7.50811 18.3104 7.63492L18.3553 7.68066C18.4554 7.79401 18.5147 7.93872 18.5218 8.11434L18.5213 8.17761L18.3729 13.512C18.3619 13.9065 18.0338 14.2343 17.6389 14.2453C17.2417 14.2564 16.9278 13.9427 16.9388 13.5459L17.0411 9.86248L9.4264 17.4701C9.13964 17.7566 8.68559 17.7692 8.41229 17.4962C8.13899 17.2232 8.15163 16.7696 8.43838 16.4831L15.992 8.93652L12.4243 9.03574C12.027 9.04679 11.7131 8.73317 11.7242 8.33632C11.7352 7.94184 12.0633 7.61404 12.4581 7.60306Z"
+                                    fill="#10C581"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center gy-lg-5 g-4">
-            <x-project-card />
-        </div>
     </div>
-</div>
+@endif

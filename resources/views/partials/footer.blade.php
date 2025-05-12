@@ -6,13 +6,11 @@
                     <div class="logo-and-social-media-area">
                         <div class="footer-logo">
                             <a href="#">
-                                <img src="{{logo()}}" alt="" /></a>
+                                <img src="{{ whiteLogo() }}" alt="" /></a>
                         </div>
                         <div class="footer-content">
                             <p>
-                                We are a digital branding agency dedicated to helping
-                                businesses thrive. With a proven trackrecord, we’ve
-                                successfully partnered.
+                                {{$general->description}}
                             </p>
                         </div>
                         <ul class="footer-social-list">
@@ -130,8 +128,7 @@
             <div class="footer-bottom">
                 <div class="copy-write-area">
                     <p>
-                        Copyright © 2025, Designed & Developed by
-                        <a href="https://themeforest.net/user/qzency/portfolio"><span>Qzency</span></a>
+                        Copyright © {{ date('Y') }} All Rights Reserve
                     </p>
                 </div>
                 <div class="footer-bottom-right">

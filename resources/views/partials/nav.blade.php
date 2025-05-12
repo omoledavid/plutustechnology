@@ -7,9 +7,9 @@
 <li class="{{setActiveMenu( 'services')}}">
     <a href="{{route('services')}}" class="drop-down">Services</a><i class="bi bi-plus dropdown-icon"></i>
 </li>
-<li class="">
-    <a href="#" class="drop-down">Blog</a><i class="bi bi-plus dropdown-icon"></i>
+<li class="{{setActiveMenu( 'blog')}}">
+    <a href="{{route('blog')}}" class="drop-down">Blog</a><i class="bi bi-plus dropdown-icon"></i>
 </li>
-<li>
-    <a href="" class="drop-down">Contact Us</a>
+<li class="{{setActiveMenu( 'contact')}}">
+    <a href="{{route('contact')}}" class="drop-down">Contact Us</a>
 </li>

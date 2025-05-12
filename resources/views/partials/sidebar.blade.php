@@ -1,7 +1,7 @@
 <div class="right-sidebar-menu">
     <div class="sidebar-logo-area d-flex justify-content-between align-items-center">
         <div class="sidebar-logo-wrap">
-            <a href="{{route('home')}}"><img alt="image" src="{{logo()}}" /></a>
+            <a href="{{ route('home') }}"><img alt="image" src="{{ logo() }}" /></a>
         </div>
         <div class="right-sidebar-close-btn">
             <i class="bi bi-x"></i>
@@ -24,7 +24,7 @@
                     </g>
                 </svg>
             </span>
-            <h2>Connect with VisonX</h2>
+            <h2>Connect with {{ $general->site_name ?? '' }}</h2>
             <p>
                 Ready to take the first step towards unlocking opportuniti realizing
                 goals, and embracing innovation?
@@ -47,7 +47,7 @@
                 </div>
                 <div class="content">
                     <span>To More Inquiry</span>
-                    <h6><a href="tel:+990737621432">+990-737 621 432</a></h6>
+                    <h6><a href="tel:+990737621432">{{ formatPhoneNumber($general?->phone) }}</a></h6>
                 </div>
             </li>
             <li class="single-contact">
@@ -72,10 +72,7 @@
                 </div>
                 <div class="content">
                     <span>To Send Mail</span>
-                    <h6><a
-                            href="https://demo.qzency.com/cdn-cgi/l/email-protection#e88d90898598848da88f85898184c68b8785"><span
-                                class="__cf_email__"
-                                data-cfemail="25405d4448554940654248444c490b464a48">[email&#160;protected]</span></a>
+                    <h6><a href="mailto:{{ $general?->email }}"><span>{{ $general?->email }}</span></a>
                     </h6>
                 </div>
             </li>
@@ -94,7 +91,7 @@
                 </div>
                 <div class="content">
                     <span>Office Address 01</span>
-                    <h6><a href="#">168/170, Mirpur DOHS, Bangladesh</a></h6>
+                    <h6><a href="javascript::">{{ $general?->address }}</a></h6>
                 </div>
             </li>
             <li class="single-contact">
@@ -110,35 +107,37 @@
                         </g>
                     </svg>
                 </div>
-                <div class="content">
-                    <span>Office Address 02</span>
-                    <h6><a href="#">8204 Glen Ridge Drive Endicott, NY 13760</a></h6>
-                </div>
+                @if ($general?->alt_address)
+                    <div class="content">
+                        <span>Office Address 02</span>
+                        <h6><a href="javascript::">{{ $general?->alt_address }}</a></h6>
+                    </div>
+                @endif
             </li>
         </ul>
         <div class="social-area">
             <h6>Social Just You Connected Us!</h6>
             <ul class="social-list-area">
                 <li>
-                    <a href="https://www.linkedin.com/">
+                    <a href="{{ $general?->linkedin ?? '#' }}">
                         <i class="bi bi-linkedin"></i>
                         <span>LinkedIn</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/">
+                    <a href="{{ $general?->facebook ?? '#' }}">
                         <i class="bi bi-facebook"></i>
                         <span>Facebook</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/">
+                    <a href="{{ $general?->twitter ?? '#' }}">
                         <i class="bi bi-twitter-x"></i>
                         <span>Twitter</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/">
+                    <a href="{{ $general?->instagram ?? '#' }}">
                         <i class="bi bi-instagram"></i>
                         <span>Instagram</span>
                     </a>

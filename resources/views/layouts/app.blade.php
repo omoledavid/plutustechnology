@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{{asset('assets/css/swiper-bundle.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/boxicons.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-icons.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/jquery.fancybox.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" />
     <title>Plutustechnology</title>
-    <link rel="icon" href="assets/image/logo/rextfy-icon-white.png" />
+    <link rel="icon" href="{{favicon()}}" />
+    <meta name="description" content="{{$general?->description}}" />
 </head>
 
 <body>
@@ -35,24 +36,23 @@
     <!-- Banner section start -->
     @include('partials.footer')
     <!--  Main jQuery  -->
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
     <!-- Popper and Bootstrap JS -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <!-- Swiper slider JS -->
     <!-- Counterup JS -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
     <!-- swiper -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.fancybox.min.js') }}"></script>
     <!-- Wow  JS -->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
     <!-- GSAP  JS -->
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/gsap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/ScrollTrigger.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 
 </html>

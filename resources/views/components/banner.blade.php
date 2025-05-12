@@ -1,5 +1,5 @@
 @props(['pageName' => 'About Us'])
-<div class="breadcrumb-section" style="background-image: url(assets/image/banner-img/breadcrumb-img.png)">
+<div class="breadcrumb-section" style="background-image: url({{asset('assets/image/banner-img/breadcrumb-img.png')}})">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
