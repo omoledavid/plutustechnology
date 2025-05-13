@@ -4,10 +4,11 @@
         <div class="portfolio-image">
             <a href="#">
                 @if ($project?->image)
-                    <img class="portfolio-img" src="{{ asset('storage/' . $project?->image) }}"
-                        alt="{{ $project->title }}" style="aspect-ratio: 4 / 3; object-fit: cover;" />
+                    <img class="portfolio-img" src="{{ asset('storage/' . $project?->image) }}" alt="{{ $project->title }}"
+                        style="aspect-ratio: 4 / 3; object-fit: cover;" />
                 @else
-                    <img class="portfolio-img" src="{{ asset('images/default-image.png') }}" alt="{{ $project->title }}" />
+                    <img class="portfolio-img" src="{{ asset('images/default-image.png') }}"
+                        alt="{{ $project->title }}" />
                 @endif
             </a>
         </div>

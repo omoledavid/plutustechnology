@@ -39,11 +39,11 @@
                 </div>
                 <div class="col-lg-5">
                     <ul class="service-img-group">
-                        {{-- <li class="active">
+                        <li class="active">
                             <div class="service-img">
                                 <img src="assets/image/banner-img/digital-marketing.png" alt="">
                             </div>
-                        </li> --}}
+                        </li>
                         <li>
                             <div class="service-img">
                                 <img src="assets/image/banner-img/development.png" alt="">
