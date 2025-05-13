@@ -14,7 +14,7 @@
         </div>
         <div class="portfolio-content">
             <h6>Client: {{ $project->client_name }}</h6>
-            <h3><a href="projects-details.html">{{ $project->title }}</a></h3>
+            <h3><a href="{{ route('project.show', $project->slug) }}">{{ $project->title }}</a></h3>
 
             <div class="view-btn">
                 <a href="{{ route('project.show', $project->slug) }}" class="primary-button"

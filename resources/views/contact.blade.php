@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
                                 <div class="form-inner">
-                                    <a class="primary-btn-three" data-text="Submit" href="error.html">
+                                    <a class="primary-btn-three" data-text="Submit" href="javascript::">
                                         <span>Submit</span>
                                     </a>
                                 </div>

@@ -114,7 +114,7 @@
                         </div>
                         <form class="subscribe-form-wrap">
                             <input type="email" placeholder="Email Address" />
-                            <a class="primary-btn-three three" data-text="Subscribe" href="error.html">
+                            <a class="primary-btn-three three" data-text="Subscribe" href="javascript::">
                                 <span>Subscribe</span>
                             </a>
                         </form>

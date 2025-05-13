@@ -49,7 +49,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="primary-btn-three two" data-text="Contact Now" href="contact.html">
+                    <a class="primary-btn-three two" data-text="Contact Now" href="{{route('contact')}}">
                         <span>Contact Now</span></a>
                 </div>
                 <div class="col-lg-6">

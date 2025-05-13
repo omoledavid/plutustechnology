@@ -21,7 +21,7 @@
                     <div class="view-content-and-button">
                         <p>{{ $sectionData->content['description'] }}</p>
                         <div class="view-btn">
-                            <a href="projects-details.html" class="primary-button">View All Services </a>
+                            <a href="{{route('projects')}}" class="primary-button">View All Projects </a>
                             <div class="icon">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
