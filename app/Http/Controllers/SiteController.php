@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
+use App\Models\Service;
 use Firefly\FilamentBlog\Enums\PostStatus;
 use Firefly\FilamentBlog\Models\Category;
 use Firefly\FilamentBlog\Models\Post;
@@ -12,18 +14,43 @@ class SiteController extends Controller
 {
     public function home(): View
     {
-        return view('home');
+        $pageTitle = 'Home';
+        $services = Service::query()->get();
+        $projects = Project::query()->latest()->limit(6)->get();
+        return view('pages.home', compact('pageTitle', 'services', 'projects'));
     }
     public function about(): View
     {
         $pageTitle = 'About Us';
         $posts = Post::where('status', PostStatus::PUBLISHED)->latest()->get();
 
-        return view('about', compact('pageTitle', 'posts'));
+        return view('pages.about', compact('pageTitle', 'posts'));
     }
     public function services(): View
     {
-        return view('services');
+        $pageTitle = 'Our Services';
+        $services = Service::query()->latest()->get();
+        return view('pages.services.index', compact('pageTitle', 'services'));
+    }
+    public function serviceShow($slug): View
+    {
+        $service = Service::query()->where('slug', $slug)->firstOrFail();
+        $pageTitle = 'Service Details - ' . $service->title;
+        $services = Service::query()->latest()->get();
+        return view('pages.services.show', compact('pageTitle', 'service', 'services'));
+    }
+    public function projects(): View
+    {
+        $pageTitle = 'Our Projects';
+        $projects = Project::query()->latest()->get();
+        return view('pages.projects.index', compact('pageTitle', 'projects'));
+    }
+    public function projectShow($slug): View
+    {
+        $project = Project::query()->where('slug', $slug)->firstOrFail();
+        $pageTitle = 'Project Details - ' . $project->title;
+        $projects = Project::query()->where('id', '!=', $project->id)->latest()->limit(3)->get();
+        return view('pages.projects.show', compact('pageTitle', 'project', 'projects'));
     }
     public function blog(): View
     {
@@ -32,7 +59,7 @@ class SiteController extends Controller
         $posts = Post::where('status', PostStatus::PUBLISHED)->latest()->paginate(9);
 
         $categories = Category::query()->whereHas('posts')->latest()->get();
-        return view('pages.blog.index', compact('pageTitle','posts','categories'));
+        return view('pages.blog.index', compact('pageTitle', 'posts', 'categories'));
     }
     public function contact(): View
     {

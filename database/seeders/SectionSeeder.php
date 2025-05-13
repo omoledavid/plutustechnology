@@ -166,6 +166,35 @@ class SectionSeeder extends Seeder
                 'updated_at' => $now,
             ],
             [
+                'page_name' => 'home',
+                'section_key' => 'team',
+                'content' => json_encode([
+                    'title' => 'Our Team Member',
+                    'subtitle' => 'Top Skilled experts',
+                    'data' => [
+                        [
+                            'name' => 'Omole Kessiena David',
+                            'position' => 'Software Engineer',
+                            'image' => '',
+                            'facebook' => '',
+                            'linkedin' => '',
+                            'instagram' => '',
+                            'twitter' => '',
+                        ],
+                    ],
+                ]),
+                'settings' => json_encode([
+                    'background_color' => '#f0f4f8',
+                    'text_color' => '#2d3748',
+                    'auto_scroll' => true,
+                    'scroll_speed' => 5000,
+                ]),
+                'is_active' => true,
+                'order' => 3,
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
                 'page_name' => 'about',
                 'section_key' => 'blog',
                 'content' => json_encode([

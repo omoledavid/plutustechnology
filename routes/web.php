@@ -12,6 +12,9 @@ Route::controller(SiteController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('about', 'about')->name('about');
     Route::get('services', 'services')->name('services');
+    Route::get('service/{slug}', 'serviceShow')->name('service.show');
+    Route::get('projects', 'projects')->name('projects');
+    Route::get('project/{slug}', 'projectShow')->name('project.show');
     Route::get('blog', 'blog')->name('blog');
     Route::get('post/{slug}', 'viewPost')->name('post.show');
     Route::get('contact', 'contact')->name('contact');

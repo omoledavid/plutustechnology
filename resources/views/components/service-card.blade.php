@@ -1,0 +1,20 @@
+@props(['service'])
+<li class="single-service">
+    <h4>01</h4>
+    <h3><a href="services-details.html">{{$service->title}}</a></h3>
+    <div class="single-hover">
+        <div class="icon">
+           
+        </div>
+        <p>Boost your brand’s reach with Vision results-driven digital marketing, including SEO,
+            social media,
+            and paid campaigns.</p>
+        <a href="services-details.html" class="read-more-btn">Read More
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10.1323 0.457495L13.7611 4.25553L13.7915 4.28525C13.9129 4.41234 13.9836 4.57996 13.9943 4.77799L13.9938 4.84457C13.9851 5.00144 13.9286 5.15131 13.8169 5.2856L13.7746 5.33174L10.1408 9.14351C9.87207 9.42538 9.43711 9.42538 9.16782 9.14351C8.89692 8.85996 8.89647 8.39895 9.16679 8.11541L11.6759 5.48327L1.58131 5.48353C1.20118 5.48353 0.891533 5.15942 0.89114 4.75807C0.890747 4.35672 1.19976 4.03261 1.57988 4.03261L11.5934 4.03234L9.16032 1.48562C8.88942 1.20206 8.88897 0.741049 9.15931 0.457495C9.42805 0.175627 9.86301 0.175627 10.1323 0.457495Z"
+                    fill="#10C581" />
+            </svg>
+        </a>
+    </div>
+</li>
